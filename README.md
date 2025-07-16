@@ -1,12 +1,48 @@
-# React + Vite
+# 🌐 WebScraper Frontend – React + Tailwind + Google Auth
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend of a full stack web scraping application, built using **React**, styled with **Tailwind CSS**, and authenticated with **Google OAuth**. It allows users to log in and enter any URL to fetch clean, structured content from that page via the backend FastAPI service.
 
-Currently, two official plugins are available:
+Deployed live on **Vercel**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔐 **Google Login** using `@react-oauth/google`
+- 📬 Input any URL to scrape and receive structured data
+- 🧱 Data displayed in clean, collapsible cards (heading + content)
+- 📱 **Fully responsive UI** using **Tailwind CSS**
+- ⚡ Fetches data from a deployed **FastAPI** backend on Render
+- 🌐 Uses `react-router-dom` for navigation between login and dashboard
+
+---
+
+## 🔧 Tech Stack
+
+- **React** (Vite)
+- **React Router DOM**
+- **Tailwind CSS**
+- **Axios**
+- **Google OAuth 2.0**
+- **Vercel** (deployment)
+
+---
+
+## 🖥️ Screens
+
+### 🔐 Login Page
+- Google Sign-In
+- On success: navigates to dashboard
+
+### 📊 Dashboard
+- Enter a URL to scrape
+- View content organized into sections:
+  - Headings (`h1`, `h2`, `h3`)
+  - Associated text (`p`, `li`)
+- Responsive design with cards
+
+---
+
+
+
+
